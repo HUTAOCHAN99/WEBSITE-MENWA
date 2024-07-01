@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sticky Navbar with Banner</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <!-- navbar container -->
+        <div class="container-nav">
+            <nav>
+                <div class="logo-container">
+                    <img src="img/logo.png" class="logo">
+                    <h1 class="logo">MENWA UPNVYK</h1>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Kegiatan</a></li>
+                </ul>
+            </nav>
+            <section class="banner">
+                <!-- welcome text  -->
+                <div class="welcome">
+                    
+                </div>
+            </section>
+        </div>
+        <!-- navbar end -->
+        <!-- isi content -->
+        <div class="content-container">
+            <div class="carousel">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="img\icon1.png" alt="Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="img\icon1.png" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="img\icon1.png" alt="Image 3">
+                    </div>
+                    <div class="slide">
+                        <img src="img\icon1.png" alt="Image 4">
+                    </div>
+                    <div class="slide">
+                        <img src="img\icon1.png" alt="Image 5">
+                    </div>
+                </div>
+                <div class="navigation">
+                    <button class="prev"
+                        onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next"
+                        onclick="moveSlide(1)">&#10095;</button>
+                </div>
+                <div class="indicators">
+                    <span class="indicator" onclick="currentSlide(1)"></span>
+                    <span class="indicator" onclick="currentSlide(2)"></span>
+                    <span class="indicator" onclick="currentSlide(3)"></span>
+                    <span class="indicator" onclick="currentSlide(4)"></span>
+                    <span class="indicator" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+        <!-- address,contact -->
+         <div class="AD">
+            
+         </div>
+         <!-- address,contact end -->
+        <!-- content end -->
+        <!-- footer -->
+        <footer>
+            <p>&copy; 2024 MENWA UPNVYK. All rights reserved.</p>
+        </footer>
+        <!-- footer end -->
+        <script src="script.js"></script>
+    </body>
+</html>
