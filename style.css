@@ -88,18 +88,13 @@ nav.sticky .ula li a {
 /* navbar bawah */
 nav .ulb {
   position: absolute;
-  /*Correctedtouseposition:;
-  absolute*/
-  top: 55px;
-  /*Position.ulbbelow.ula*/
+  top: 80px;
   margin-left: 425px;
   width: 100%;
-  /*Ensure.ulbspansthefullwidthofthenav*/
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 0;
-  /*Ensurethiselementisbelow.ula*/
   text-decoration: none;
   list-style: none;
   .link {
@@ -129,7 +124,7 @@ nav .ulb {
 
 nav.sticky .ulb {
   transition: 0.8s;
-  top: 50px;
+  top: 68px;
   -webkit-transition: 0.8s;
   -moz-transition: 0.8s;
   -ms-transition: 0.8s;
