@@ -144,7 +144,12 @@ nav.sticky .logo-t {
 }
 /* K1 */
 .k1{
-
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: aqua;
+  width: 80%;
+  height: 100vh;
 }
 /* K1 end */
 /* kegiatan container end */
