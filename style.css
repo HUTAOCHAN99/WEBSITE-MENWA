@@ -157,8 +157,8 @@ nav.sticky .logo-t {
   width: 0;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing steps(30,end) forwards infinite 9s;
-  -webkit-animation: typing steps(30,end) forwards infinite 9s;
+  animation: typing steps(30,end) forwards infinite 6s;
+  -webkit-animation: typing steps(30,end) forwards infinite 6s;
 }
 @keyframes typing{
   0%{
@@ -241,7 +241,7 @@ nav.sticky .logo-t {
 footer {
   display: relative;
   margin-top: 100px;
-  padding: 20px;
+  padding: 10px;
   background-color: #333;
   color: #fff;
   bottom: 0;
@@ -249,19 +249,30 @@ footer {
 }
 .container-f{
   display: flex;
+
 }
 .location{
+  margin-left: 130px;
   background: #7a5656;
-  width: 50%;
+  width: 40%;
   height: 100px;
-  padding: 5px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+.alamat{
+  border-bottom: 2px solid green;
+  padding-bottom: 20px;
 }
 .contact{
-  align-items: flex-end;
   background: #ff0000;
-  width: 50%;
+  width: 40%;
   height: 100px;
-  padding: 5px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+.nomor{
+  border-bottom: 2px solid green;
+  padding-bottom: 20px;
 }
 .copyright{
   margin-top: 10px;

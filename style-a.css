@@ -216,14 +216,45 @@ nav.sticky .logo-t {
     }
 }
 /* misi end */
+/* footer style  */
 footer {
+  display: relative;
   margin-top: 100px;
-  text-align: center;
-  padding: 20px;
+  padding: 10px;
   background-color: #333;
   color: #fff;
-  position: relative;
   bottom: 0;
   width: 100%;
 }
-/* container about us end*/
+.container-f{
+  display: flex;
+
+}
+.location{
+  margin-left: 130px;
+  background: #7a5656;
+  width: 40%;
+  height: 100px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+.alamat{
+  border-bottom: 2px solid green;
+  padding-bottom: 20px;
+}
+.contact{
+  background: #ff0000;
+  width: 40%;
+  height: 100px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+.nomor{
+  border-bottom: 2px solid green;
+  padding-bottom: 20px;
+}
+.copyright{
+  margin-top: 10px;
+  text-align: center;
+}
+/* footer end */
