@@ -49,7 +49,7 @@ window.addEventListener("scroll", function () {
 
     // Animasi Kartu Kedua (c2)
     const label2 = document.querySelector('label.card[for="c2"]');
-    const images2 = ['img/pradik (1).jpeg.JPG', 'img/pradik (2).jpeg.JPG', 'img/pradik (3).jpeg.JPG', 'img/pradik (4).jpeg.JPG'];
+    const images2 = ['img/pradik(1).jpg', 'img/pradik(2)jpg', 'img/pradik(3).jpg', 'img/pradik(4)jpg'];
     let imageIndex2 = 0;
 
     function changeBackgroundImage2() {

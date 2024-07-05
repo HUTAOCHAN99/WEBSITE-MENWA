@@ -250,18 +250,19 @@ footer {
   margin-left: 130px;
   background: #7a5656;
   width: 40%;
-  height: 100px;
+  height: 120px;
   padding-right: 20px;
   padding-left: 10px;
 }
 .alamat{
   border-bottom: 2px solid green;
   padding-bottom: 20px;
+  font-size: 15px;
 }
 .contact{
   background: #ff0000;
   width: 40%;
-  height: 100px;
+  height: 120px;
   padding-right: 20px;
   padding-left: 10px;
 }
