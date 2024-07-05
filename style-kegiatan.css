@@ -1,187 +1,370 @@
 /* global style */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  body {
-    background-color: #ffffff;
-    margin: 0;
-      padding: 0;
-  }
-  /* global end */
-  /* navbar */
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    transition: 0.6s;
-    z-index: 1000;
-    background-color: rgba(20, 73, 27, 0.8);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    -webkit-transition: 0.6s;
-    -moz-transition: 0.6s;
-    -ms-transition: 0.6s;
-    -o-transition: 0.6s;
-  }
-  
-  nav.sticky {
-    padding: 10px 50px;
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 100px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgba(22, 120, 14, 0.8);
+  max-width: 100%;
+}
+/* global end */
+/* navbar  */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  transition: 0.6s;
+  z-index: 1000;
+  background-color: rgba(20, 73, 27, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+}
+
+nav.sticky {
+  padding: 10px 50px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+  transition: 0.6s;
+}
+
+nav .logo {
+  color: #000000;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+nav .logo-t {
+  color: white;
+}
+/* nav atas normal */
+nav .ula {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+nav .ula li {
+  list-style: none;
+}
+
+nav .ula li a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: 0.6s;
+}
+
+nav.sticky .ula li a {
+  color: #000;
+}
+/* navbar atas end */
+/* navbar bawah */
+nav .ulb {
+  position: absolute;
+  top: 80px;
+  margin-left: 425px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  text-decoration: none;
+  list-style: none;
+  .link {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 80px;
     height: auto;
-    margin-right: 15px;
-    transition: 0.6s;
   }
-  
-  nav .logo {
-    color: #000000;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  .link-fb{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 73px;
+    height: auto;
   }
-  nav .logo-t {
-    color: white;
+  .link-ig{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 73px;
+    height: auto;
   }
-  /* nav atas normal */
-  nav .ula {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  nav .ula li {
-    list-style: none;
-  }
-  
-  nav .ula li a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: 500;
-    transition: 0.6s;
-  }
-  
-  nav.sticky .ula li a {
-    color: #000;
-  }
-  /* navbar atas end */
-  
-  /* navbar bawah */
-  nav .ulb {
-    position: absolute;
-    top: 80px;
-    margin-left: 425px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 0;
-    text-decoration: none;
-    list-style: none;
-  
-    .link {
-      padding-left: 20px;
-      padding-right: 20px;
-      width: 80px;
-      height: auto;
-    }
-    .link-fb {
-      padding-left: 20px;
-      padding-right: 20px;
-      width: 73px;
-      height: auto;
-    }
-    .link-ig {
-      padding-left: 20px;
-      padding-right: 20px;
-      width: 73px;
-      height: auto;
-    }
-    transition: 0.8s;
-    -webkit-transition: 0.8s;
-    -moz-transition: 0.8s;
-    -ms-transition: 0.8s;
-    -o-transition: 0.8s;
-  }
-  
-  nav.sticky .ulb {
-    transition: 0.8s;
-    top: 68px;
-    -webkit-transition: 0.8s;
-    -moz-transition: 0.8s;
-    -ms-transition: 0.8s;
-    -o-transition: 0.8s;
-  }
-  /* navbar bawah end */
-  
-  nav.sticky .logo-t {
-    color: #000;
-  }
-  /* navbar bawah end */
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
 
-  /* container content */
-  
-  /* container content end*/
-  
+nav.sticky .ulb {
+  transition: 0.8s;
+  top: 68px;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
+/* navbar bawah end */
 
-  /* footer style  */
+nav.sticky .logo-t {
+  color: #000;
+}
+.banner {
+  background-color: rgba(20, 73, 27, 0.4);
+  margin-top: 20%;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  /* bg */
+}
+/* welcome text */
+.video_bg {
+  
+  margin-top:4%;
+  padding-bottom: 4%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  /*Ensuresthevideocoverstheareawithoutdistortion*/z-index: -1;
+   /* Sends the video to the back */
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+/* Animasi Fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Keyframes untuk animasi dari kiri ke tengah */
+@keyframes move-left-to-center {
+  0% {
+    transform: translateX(0); /* Awal di sisi kiri */
+  }
+  100% {
+    transform: translateX(25vw); /* Berhenti di tengah */
+  }
+}
+
+/* Keyframes untuk animasi dari kanan ke tengah */
+@keyframes move-right-to-center {
+  0% {
+    transform: translateX(0); /* Awal di sisi kanan */
+  }
+  100% {
+    transform: translateX(-35vw); /* Berhenti di tengah */
+  }
+}
+
+/* Gaya dasar untuk teks yang bergerak */
+.typing-left, .typing-right {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 18px;
+  color: rgb(10, 10, 10);
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  z-index: 10; /* Lebih tinggi dari elemen di bawahnya */
+  font-family: 'Roboto', sans-serif; /* Ganti 'Roboto' dengan font pilihan Anda */
+  opacity: 1; /* Mulai dengan sepenuhnya terlihat setelah fade-in selesai */
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.typing-left {
+  bottom: -20%; /* Sesuaikan posisi vertikal */
+  left: 0;
+  border-right: 0.01rem solid rgb(0, 0, 0);
+  animation: move-left-to-center 3s ease forwards, fadeIn 2s ease; /* Animasi fade-in dan bergerak */
+  animation-fill-mode: forwards; /* Menjaga posisi akhir animasi */
+  animation-iteration-count: 1; /* Animasi hanya terjadi sekali */
+}
+
+.typing-right {
+  bottom: -15%; /* Sesuaikan posisi vertikal */
+  right: 0;
+  border-left: 0.01rem solid rgb(0, 0, 0);
+  text-align: right;
+  animation: move-right-to-center 3s ease forwards, fadeIn 2s ease; /* Animasi fade-in dan bergerak */
+  animation-fill-mode: forwards; /* Menjaga posisi akhir animasi */
+  animation-iteration-count: 1; /* Animasi hanya terjadi sekali */
+}
+
+/* Container untuk teks agar animasi fade-in */
+.text-container {
+ 
+  opacity: 0; /* Mulai dengan transparansi penuh */
+  animation: fadeIn 2s ease-in-out forwards; /* Animasi fade-in */
+}
+
+
+
+
+/* Konten kegiatan */
+.kolom-k {
+  display: flex;
+  background-color: #024018;
+  width: 100%;
+  height: 10vh;
+  position: relative; /* Perlu untuk posisi z-index bekerja */
+  z-index: 1; /* Lebih rendah dari teks animasi */
+  color: white;
+}
+.kolom-k .tanggal-k {
+  width: 30%;
+  height: 7vh;
+  margin-top: 1%;
+  margin-left: 4%;
+  margin-right: 1%;
+  padding: 1%;
+  text-align: end;
+  border-right: 1px solid rgb(255, 255, 255);
+
+}
+.kolom-k .bulan-k {
+  margin-top: 1%;
+  width: 30%;
+  height: 7vh;
+  padding: 1%;
+  text-align: center;
+}
+.kolom-k .tahun-k {
+
+  width: 30%;
+  height: 7vh;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1%;
+  padding: 1%;
+  text-align: start;
+  border-left: 1px solid rgb(255, 255, 255);
+}
+.nama-k {
+  background-color: #2e1313;
+  width: 50%;
+  height: 100%;
+}
+
+.kolom2 {
+  background-color: #024018;
+  width: 100%;
+  height: 15vh;
+}
+
+.isi{
+  display: flex;
+  background-color: #fff;
+  width: 80%;
+  height: 100vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1%;
+}
+.foto{
+  background-color: aqua;
+  width: 40%;
+  height: 80vh;
+  margin-top: 1%;
+  margin-left: 10%;
+}
+.text{
+  background-color: aquamarine;
+  width: 40%;
+  height: 40vh;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+.foto2{
+  background-color: aquamarine;
+  width: 40%;
+  height: 40vh;
+  margin-left: -40%;
+  margin-top: 27%;
+}
+.text2{
+  background-color: #63567a;
+  width: 40%;
+  height: 20vh;
+  margin-left: -82%;
+  margin-top: 50%;
+}
+/* comtent kegiatan end */
+/* footer style  */
 footer {
-    display: relative;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    bottom: 0;
-    width: 100%;
-  }
-  .container-f {
-    display: flex;
-  }
-  .location {
-    margin-left: 130px;
-    background: #7a5656;
-    width: 40%;
-    height: 100px;
-    padding-right: 20px;
-    padding-left: 10px;
-  }
-  .alamat {
-    border-bottom: 2px solid green;
-    padding-bottom: 20px;
-  }
-  .contact {
-    background: #ff0000;
-    width: 40%;
-    height: 100px;
-    padding-right: 20px;
-    padding-left: 10px;
-  }
-  .nomor {
-    border-bottom: 2px solid green;
-    padding-bottom: 20px;
-  }
-  .copyright {
-    margin-top: 10px;
-    text-align: center;
-  }
-  /* footer end */
+  display: relative;
+  margin-top: 100px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  bottom: 0;
+  width: 100%;
+}
+.container-f{
+  display: flex;
+
+}
+.location{
+  margin-left: 130px;
+  background: #7a5656;
+  width: 40%;
+  height: 120px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+.alamat{
+  border-bottom: 2px solid green;
+  padding-bottom: 20px;
+font-size: 15px;
+}
+.contact{
+  background: #ff0000;
+  width: 40%;
+  height: 120px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+.nomor{
+  border-bottom: 2px solid green;
+  padding-bottom: 20px;
+}
+.copyright{
+  margin-top: 10px;
+  text-align: center;
+}
