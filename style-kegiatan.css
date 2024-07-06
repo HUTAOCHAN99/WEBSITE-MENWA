@@ -8,7 +8,7 @@
 
 body {
   background-color: rgba(22, 120, 14, 0.8);
-  max-width: 100%;
+  width: 100%;
 }
 /* global end */
 /* navbar  */
@@ -121,7 +121,30 @@ nav .ulb {
   -ms-transition: 0.8s;
   -o-transition: 0.8s;
 }
-
+.link:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition-delay: 0.2s;
+}
+.link-fb:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition-delay: 0.2s;
+}
+.link-ig:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition-delay: 0.2s;
+}
 nav.sticky .ulb {
   transition: 0.8s;
   top: 68px;
@@ -227,14 +250,12 @@ nav.sticky .logo-t {
   animation-iteration-count: 1; /* Animasi hanya terjadi sekali */
 }
 
-/* Container untuk teks agar animasi fade-in */
+
 .text-container {
  
-  opacity: 0; /* Mulai dengan transparansi penuh */
+  opacity: 0; 
   animation: fadeIn 2s ease-in-out forwards; /* Animasi fade-in */
 }
-
-
 
 
 /* Konten kegiatan */
@@ -243,8 +264,8 @@ nav.sticky .logo-t {
   background-color: #024018;
   width: 100%;
   height: 10vh;
-  position: relative; /* Perlu untuk posisi z-index bekerja */
-  z-index: 1; /* Lebih rendah dari teks animasi */
+  position: relative; 
+  z-index: 1; 
   color: white;
 }
 .kolom-k .tanggal-k {
@@ -292,7 +313,7 @@ nav.sticky .logo-t {
   display: flex;
   background-color: #fff;
   width: 80%;
-  height: 100vh;
+  height: 110vh;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 1%;
@@ -325,12 +346,48 @@ nav.sticky .logo-t {
   margin-left: -82%;
   margin-top: 50%;
 }
+/* animasi zoom out zoom in */
+.image-container {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+}
+
+.img-wrapper {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  transition: transform 0.5s ease;
+  position: relative;
+}
+
+.zoom-img {
+  width: 130%; /* Initial zoom-in to 125% */
+  height: 130%; /* Initial zoom-in to 125% */
+  object-fit: cover;
+  transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.zoom-in {
+  width: 100%; /* Zoom in to show full image */
+  height: 100%; /* Zoom in to show full image */
+  transform: scale(1);
+}
+
+.zoom-out {
+  transform: scale(1.2); /* Zoom out to fill the wrapper */
+}
+/* animasi zoom in zoom out */
 /* comtent kegiatan end */
 /* footer style  */
 footer {
   display: relative;
-  margin-top: 100px;
-  padding: 10px;
+  margin-top: 2%;
+  padding: 2%;
   background-color: #333;
   color: #fff;
   bottom: 0;
