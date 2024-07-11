@@ -11,7 +11,7 @@ body {
   background: url('img/bgabout.jpg') no-repeat center center/cover;
 }
 /* global end */
-/* navbar */
+/* navbar  */
 nav {
   position: fixed;
   top: 0;
@@ -20,11 +20,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 2% 4%;
   transition: 0.6s;
   z-index: 1000;
   background-color: rgba(20, 73, 27, 0.8);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10rem);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   -webkit-transition: 0.6s;
   -moz-transition: 0.6s;
@@ -33,9 +33,9 @@ nav {
 }
 
 nav.sticky {
-  padding: 10px 50px;
+  padding: 1% 5%;
   background: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.1);
 }
 
 .logo-container {
@@ -44,18 +44,21 @@ nav.sticky {
 }
 
 .logo {
-  width: 100px;
+  width: 15%;
+  /* width: 100px; */
   height: auto;
-  margin-right: 15px;
+  margin-right: 1.5%;
   transition: 0.6s;
 }
-
+.ulc{
+  gap: 1%;
+}
 nav .logo {
   color: #000000;
   text-decoration: none;
   font-size: 2em;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1%;
 }
 nav .logo-t {
   color: white;
@@ -73,23 +76,25 @@ nav .ula li {
 }
 
 nav .ula li a {
-  margin: 0 15px;
+  margin: 0 0.9rem;
   text-decoration: none;
   color: #fff;
-  letter-spacing: 2px;
+  letter-spacing: 0.1rem;
   font-weight: 500;
   transition: 0.6s;
 }
 
+
 nav.sticky .ula li a {
+  color: #000;
+}
+nav.sticky .logo-t {
   color: #000;
 }
 /* navbar atas end */
 /* navbar bawah */
 nav .ulb {
-  position: absolute;
-  top: 80px;
-  margin-left: 425px;
+
   width: 100%;
   display: flex;
   justify-content: center;
@@ -97,30 +102,24 @@ nav .ulb {
   z-index: 0;
   text-decoration: none;
   list-style: none;
-
   .link{
     padding-left: 20px;
     padding-right: 20px;
-    width: 80px;
+    width: 5em;
     height: auto;
   }
   .link-fb{
     padding-left: 20px;
     padding-right: 20px;
-    width: 73px;
+    width: 4.5em;
     height: auto;
   }
   .link-ig{
     padding-left: 20px;
     padding-right: 20px;
-    width: 73px;
+    width: 4.5em;
     height: auto;
   }
-  transition: 0.8s;
-  -webkit-transition: 0.8s;
-  -moz-transition: 0.8s;
-  -ms-transition: 0.8s;
-  -o-transition: 0.8s;
 }
 .link:hover{
   transform: scale(1.1);
@@ -155,11 +154,6 @@ nav.sticky .ulb {
   -o-transition: 0.8s;
 }
 /* navbar bawah end */
-
-nav.sticky .logo-t {
-  color: #000;
-}
-  /* navbar bawah end */
 /* container about us  */
 .container-about {
   display: flex;
@@ -170,17 +164,20 @@ nav.sticky .logo-t {
 }
 .cont-foto {
   /* background-color: red; */
-  display: relative;
-  width: 300px;
-  margin-top: 180px;
+  display: flex;
+  width: 100%;
+  margin-top: 12%;
   margin-left: auto;
   margin-right: 415px;
 }
 .foto {
   align-items: center;
   display: relative;
-  width: 700px;
-  height: 400px;
+  width: 100%;
+  margin-left: 40%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
 }
 .about {
   align-content: center;
@@ -258,43 +255,217 @@ nav.sticky .logo-t {
 /* footer style  */
 footer {
   display: relative;
-  margin-top: 100px;
-  padding: 10px;
+  margin-top: 1%;
+  padding: 1em;
   background-color: #333;
   color: #fff;
   bottom: 0;
   width: 100%;
+  height: auto;
 }
 .container-f{
   display: flex;
 
 }
 .location{
-  margin-left: 130px;
+  margin-left: 10%;
   background: #7a5656;
   width: 40%;
-  height: 120px;
-  padding-right: 20px;
-  padding-left: 10px;
+  height: auto;
+  padding-right: 2em;
+  padding-left: 1em;
 }
 .alamat{
-  border-bottom: 2px solid green;
-  padding-bottom: 20px;
-  font-size: 15px;
+  border-bottom: 0.15em solid green;
+  padding-bottom: 1em;
+font-size: 1em;
 }
 .contact{
   background: #ff0000;
   width: 40%;
-  height: 120px;
+  height: auto;
   padding-right: 20px;
   padding-left: 10px;
 }
 .nomor{
-  border-bottom: 2px solid green;
-  padding-bottom: 20px;
+  border-bottom: 0.15em solid green;
+  padding-bottom: 1em;
+  font-size: 1em;
 }
 .copyright{
-  margin-top: 10px;
+  margin-top: 1em;
   text-align: center;
 }
-/* footer end */
+
+/* Menyesuaikan lebar gambar di carousel untuk layar kecil */
+@media only screen and (max-width: 660px) {
+  nav {
+    padding: 10px 20px; /* Mengurangi padding pada navigasi untuk layar kecil */
+  }
+  /* Menyesuaikan logo untuk layar kecil */
+  nav .ula li a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 1vmax;
+    transition: 0.6s;
+  }
+.ulb {
+    margin-left: 10px; /* Menyesuaikan margin untuk tampilan ikon sosial */
+}
+.logo {
+    width: 30px; /* Menyesuaikan ukuran logo untuk tampilan mobile */
+}
+nav .logo-t {
+  font-size: 1vmax;
+}
+nav.sticky {
+  padding: 10px 40px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.about {
+  align-content: center;
+
+  /* background-color: aqua; */
+  display: flex;
+  margin-top: 3%;
+  margin-left: 10px;
+  width: 600px;
+  height: 400px;
+}
+.teks {
+  align-content: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+}
+.profile {
+  text-align: justify;
+  padding: 10px;
+  width: 100%;
+  height: 20%;
+}
+.cont-foto {
+  /* background-color: red; */
+  display: relative;
+  width: 100%;
+  margin-top: 50%;
+  margin-left: auto;
+  margin-right: 10%;
+}
+.foto {
+  align-items: center;
+  display: relative;
+  width: 100%;
+  margin-left: 20%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.visi,
+.misi {
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.visi {
+  /* background-color: orange; */
+  width: 100%;
+  height: 150px;
+}
+.box-visi{
+    text-align: center;
+    margin-left: 2.5%;
+    margin-right: auto;
+    background-color: white;
+    width: 95%;
+
+    height: auto;
+    h1{
+      margin: center;
+    }
+}
+/* visi end */
+/* misi */
+.misi {
+  /* background-color: yellow; */
+  width: 100%;
+  height: 200px;
+}
+.box-misi{
+  text-align: center;
+  margin-left: 2.5%;
+  margin-right: auto;
+  background-color: white;
+  width: 95%;
+
+  height: auto;
+  h1{
+    margin: center;
+  }
+}
+/* misi end */
+
+.sejarah {
+  /* background-color: orange; */
+  width: 100%;
+  height: 100px;
+}
+.box-sejarah{
+  text-align: center;
+  margin-left: 2.5%;
+  margin-right: auto;
+  background-color: white;
+  width: 95%;
+
+  height: auto;
+  h1{
+    margin: center;
+  }
+}
+
+  .location,
+  .contact {
+    width: 100%; /* Mengisi lebar layar penuh untuk lokasi dan kontak */
+    margin-left: 0; /* Menghilangkan margin kiri pada elemen */
+  }
+  .alamat,.nomor {
+    width: 100%; /* Mengisi lebar layar penuh untuk lokasi dan kontak */
+    height: 40%;
+    margin-left: 0; /* Menghilangkan margin kiri pada elemen */
+    margin-top: 5%;
+    font-size: 1vh;
+    
+  }
+  .alamat1,.nomor1 {
+    width: 100%; /* Mengisi lebar layar penuh untuk lokasi dan kontak */
+    height: 50%;
+    margin-left: 0; /* Menghilangkan margin kiri pada elemen */
+    font-size: 1vh;
+    margin-top: 5%;
+  }
+  footer {
+    display: relative;
+    margin-top: 6%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+/* Menyembunyikan .ula dan menyesuaikan .ulb di layar kecil */
+@media only screen and (min-width: 600px) and (max-width: 900px){
+  
+
+}
+/* Menyesuaikan ukuran video background di layar kecil */
+@media only screen and (max-width: 900px) {
+
+}
