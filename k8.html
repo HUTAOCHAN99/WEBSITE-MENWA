@@ -5,30 +5,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kegiatan 8</title>
         <link rel="stylesheet" href="style-kegiatan.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script type="text/javascript" src="script-kegiatan.js"></script>
     </head>
     <body>
         <!-- navbar container -->
         <div class="container-nav">
             <nav>
-                <div class="logo-container">
-                    <img src="img/logo-menwa.png" class="logo">
-                    <h1 class="logo-t">RESIMEN <br> MAHASISWA <br> UPNVYK </h1>
-                </div>
-                <div class="ulc">        
-                    <ul class="ula">
-                       <li><a href="home.html">Home</a></li>
-                       <li><a href="about.html">About Us</a></li>
-                       <li><a href="kegiatan.html">Kegiatan</a></li>
-                   </ul>
-                  
-                   <ul class="ulb">
-                       <li><a href="https://youtube.com/@menwaupnvyk9655?si=iQ4tGp_rJyWpeyNK"><img class="link" src="img\yt-icon.png" alt="yt"></a></li>
-                       <li><img class="link-fb" src="img\fb-icon.png" alt="fb"></li>
-                       <li><a href="https://www.instagram.com/menwaupnvy?igsh=M3A3MDY0ZG5ibWo1"><img class="link-ig" src="img\ig-icon.png" alt="ig"></a></li>
-                       <li><a href="https://www.tiktok.com/@menwaupnvy?_t=8nebYRvYzSs&_r=1"><img class="link" src="img\tiktok-icon.png" alt="tk"></a></li>
-                   </ul>
-               </div>
+                <ul class="nav-bar">
+                    <li class="logo"><a href="#"><img src="img\logo-menwa.png"
+                                alt="menu"></a></li>
+                    <input type="checkbox" id="check">
+                    <span class="menu">
+                        <div>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="kegiatan.html">Kegiatan</a></li>
+                        </div>
+                        <div>
+                            <li><a href="https://youtube.com/@menwaupnvyk9655?si=iQ4tGp_rJyWpeyNK"><img src="img\yt-icon.png" alt="yt" class="yt"></a></li>
+                            <li><a href="#"><img src="img\fb-icon.png" alt="fb" class="sosmed"></a></li>
+                            <li><a href="https://www.instagram.com/menwaupnvy?igsh=M3A3MDY0ZG5ibWo1"><img src="img\ig-icon.png" alt="ig" class="sosmed"></a></li>
+                            <li><a href="https://www.tiktok.com/@menwaupnvy?_t=8nebYRvYzSs&_r=1"><img src="img\tiktok-icon.png" alt="tiktok" class="sosmed"></a></li>
+                        </div>
+                        <label for="check" class="close-menu"><i
+                                class="fas fa-times"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i
+                            class="fas fa-bars"></i></label>
+                </ul>
             </nav>
             <!-- logo banner -->
             <section class="banner">

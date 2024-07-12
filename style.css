@@ -9,12 +9,11 @@
 body {
   background-color: rgba(20, 73, 27, 0.4);
   min-height: 200vh;
-  --color1: rgb(255, 255, 255);
-  --color2: rgba(20, 73, 27, 0.8);
 }
 /* global end */
 /* navbar  */
 nav {
+  padding: 2% 4%;
   position: fixed;
   top: 0;
   left: 0;
@@ -22,26 +21,24 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.6s;
+  transition: 0.8s;
   z-index: 1000;
   background-color: rgba(20, 73, 27, 0.8);
   backdrop-filter: blur(10rem);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  -webkit-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -ms-transition: 0.6s;
-  -o-transition: 0.6s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
 }
 
 nav.sticky {
-  padding: 1% 2%;
+  padding: 0;
   background: #fff;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.1);
-}
-.nav-bar.sticky {
-  padding: 1% 2%;
-  background: #fff;
-  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.1);
+  li a{
+    color: black;
+  }
 }
 .nav-bar {
   width: 100%;
@@ -49,24 +46,24 @@ nav.sticky {
   justify-content: space-between;
   list-style: none;
   position: relative;
-  background-color: var(--color2);
+  /* background-color: rgba(20, 73, 27, 0.8); */
   padding: 1em;
 }
 .logo img {
-  width: 20%; /* Ukuran logo menggunakan persen */
+  width: 20%; 
 }
 .menu {
   display: flex;
-  flex-wrap: wrap; /* Wrap items to new line */
+  flex-wrap: wrap; 
 }
 .menu div {
-  flex: 1 0 50%; /* Each div takes 50% width */
+  flex: 1 0 50%; 
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .menu li {
-  padding: 0.5em; /* Padding menggunakan em untuk fleksibilitas */
+  padding: 0.5em; 
 }
 .menu li a {
   display: inline-block;
@@ -76,7 +73,17 @@ nav.sticky {
   transition: 0.15s ease-in-out;
   position: relative;
   text-transform: uppercase;
+
+  .sosmed{
+    width: 3em;
+    height: auto;
+  }
+  .yt{
+    width: 4em;
+    height: auto;
+  }
 }
+
 .menu li a::after {
   content: "";
   position: absolute;
@@ -84,7 +91,7 @@ nav.sticky {
   left: 0;
   width: 0;
   height: 1px;
-  background-color: var(--color1);
+  background-color: black;
   transition: 0.15s ease-in-out;
 }
 .menu li a:hover:after {
@@ -93,19 +100,20 @@ nav.sticky {
 .open-menu,
 .close-menu {
   position: absolute;
-  color: var(--color1);
+  color: black;
   cursor: pointer;
   font-size: 1.5rem;
   display: none;
 }
+
 .open-menu {
   top: 50%;
-  right: 2em; /* Jarak dari sisi menggunakan em */
+  right: 2em; 
   transform: translateY(-50%);
 }
 .close-menu {
-  top: 1em; /* Jarak dari atas menggunakan em */
-  right: 2em; /* Jarak dari sisi menggunakan em */
+  top: 1em; 
+  right: 2em; 
 }
 #check {
   display: none;
@@ -121,20 +129,24 @@ nav.sticky {
       top: 0;
       right: -100%;
       z-index: 100;
-      background-color: var(--color2);
+      background-color: rgba(20, 73, 27, 0.8);
       transition: all 0.2s ease-in-out;
-  }
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+}
   .logo img {
-    width: 100%; /* Ukuran logo menggunakan persen */
+    width: 100%; 
   }
   .menu div {
       flex-basis: auto;
       flex-grow: 1;
       width: 100%;
-      flex-direction: column; /* Tampilkan secara vertikal */
+      flex-direction: column; 
   }
   .menu li {
-      padding: 1em; /* Sesuaikan padding antar item menggunakan em */
+      padding: 1em; 
   }
   .open-menu, .close-menu {
       display: block;
@@ -148,7 +160,7 @@ nav.sticky {
 
 .banner {
   background-color: rgba(20, 73, 27, 0.4);
-  margin-top: 20%;
+  margin-top: 30%;
   width: 100%;
   min-height: 100vh;
   margin: auto;
@@ -165,8 +177,7 @@ nav.sticky {
   height: 100%;
   transform: translate(-50%, -50%);
   object-fit: cover;
-  /*Ensuresthevideocoverstheareawithoutdistortion*/z-index: -1;
-   /* Sends the video to the back */
+  z-index: -1;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -182,8 +193,8 @@ nav.sticky {
 }
 .typing{
   margin-top: 25%;
-  color: rgb(8, 66, 8); /* Warna teks utama */
-  border-right: 0.01rem solid rgb(0, 0, 0); /* Garis berkedip */
+  color: rgb(8, 66, 8); 
+  border-right: 0.01rem solid rgb(0, 0, 0); 
   font-size: 4em;
   white-space: nowrap;
   overflow: hidden;
@@ -343,9 +354,6 @@ font-size: 1em;
   text-align: center;
 }
 
-/* hamburger menu */
-
-/* hamburger menu end */
 
 /* Menyesuaikan lebar gambar di carousel untuk layar kecil */
 @media only screen and (max-width: 660px) {

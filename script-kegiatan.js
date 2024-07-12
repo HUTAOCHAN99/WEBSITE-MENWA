@@ -27,3 +27,10 @@ window.addEventListener("scroll", function () {
         });
     });
 });
+
+// hamburger menu
+function toggleMenu() {
+    const ulc = document.querySelector('.ulc');
+    ulc.classList.toggle('active');
+  }
+  // hamburger menu end
