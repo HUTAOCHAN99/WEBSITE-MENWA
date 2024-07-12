@@ -12,7 +12,7 @@ body {
     background: url('img/bgabout.jpg') no-repeat center center/cover;
 }
 /* global end */
-/* navbar */
+/* navbar  */
 nav {
   position: fixed;
   top: 0;
@@ -21,11 +21,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 2% 4%;
   transition: 0.6s;
   z-index: 1000;
   background-color: rgba(20, 73, 27, 0.8);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10rem);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   -webkit-transition: 0.6s;
   -moz-transition: 0.6s;
@@ -34,9 +34,9 @@ nav {
 }
 
 nav.sticky {
-  padding: 10px 50px;
+  padding: 1% 5%;
   background: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.1);
 }
 
 .logo-container {
@@ -45,20 +45,18 @@ nav.sticky {
 }
 
 .logo {
-  width: 100px;
+  width: 15%;
+  /* width: 100px; */
   height: auto;
-  margin-right: 15px;
+  margin-right: 1.5%;
   transition: 0.6s;
-}
-.ulc{
-  gap: 1%;
 }
 nav .logo {
   color: #000000;
   text-decoration: none;
   font-size: 2em;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1%;
 }
 nav .logo-t {
   color: white;
@@ -76,15 +74,19 @@ nav .ula li {
 }
 
 nav .ula li a {
-  margin: 0 15px;
+  margin: 0 0.9rem;
   text-decoration: none;
   color: #fff;
-  letter-spacing: 2px;
+  letter-spacing: 0.1rem;
   font-weight: 500;
   transition: 0.6s;
 }
 
+
 nav.sticky .ula li a {
+  color: #000;
+}
+nav.sticky .logo-t {
   color: #000;
 }
 /* navbar atas end */
@@ -98,29 +100,24 @@ nav .ulb {
   z-index: 0;
   text-decoration: none;
   list-style: none;
-  .link {
+  .link{
     padding-left: 20px;
     padding-right: 20px;
-    width: 80px;
+    width: 5em;
     height: auto;
   }
   .link-fb{
     padding-left: 20px;
     padding-right: 20px;
-    width: 73px;
+    width: 4.5em;
     height: auto;
   }
   .link-ig{
     padding-left: 20px;
     padding-right: 20px;
-    width: 73px;
+    width: 4.5em;
     height: auto;
   }
-  transition: 0.8s;
-  -webkit-transition: 0.8s;
-  -moz-transition: 0.8s;
-  -ms-transition: 0.8s;
-  -o-transition: 0.8s;
 }
 .link:hover{
   transform: scale(1.1);
@@ -156,73 +153,60 @@ nav.sticky .ulb {
 }
 /* navbar bawah end */
 
-nav.sticky .logo-t {
-  color: #000;
-}
-/* navbar bawah end */
-
 /* kegiatan container  */
 .container-k{
   display: flex;
 }
-/* K1 */
-.k1{
-  position: relative;
-  margin-left: 10%;
-  margin-right: 10%;
-  background-color: aqua;
-  width: 80%;
-  height: 100vh;
-}
-/* K1 end */
 /* kegiatan container end */
 
 /* footer style  */
 footer {
   display: relative;
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 1%;
+  padding: 1em;
   background-color: #333;
   color: #fff;
   bottom: 0;
   width: 100%;
+  height: auto;
 }
-.container-f {
+.container-f{
   display: flex;
+
 }
-.location {
-  margin-left: 130px;
+.location{
+  margin-left: 10%;
   background: #7a5656;
   width: 40%;
-  height: 120px;
-  padding-right: 20px;
-  padding-left: 10px;
+  height: auto;
+  padding-right: 2em;
+  padding-left: 1em;
 }
-.alamat {
-  border-bottom: 2px solid green;
-  padding-bottom: 20px;
-  font-size: 15px;
+.alamat{
+  border-bottom: 0.15em solid green;
+  padding-bottom: 1em;
+font-size: 1em;
 }
-.contact {
+.contact{
   background: #ff0000;
   width: 40%;
-  height: 120px;
+  height: auto;
   padding-right: 20px;
   padding-left: 10px;
 }
-.nomor {
-  border-bottom: 2px solid green;
-  padding-bottom: 20px;
+.nomor{
+  border-bottom: 0.15em solid green;
+  padding-bottom: 1em;
+  font-size: 1em;
 }
-.copyright {
-  margin-top: 10px;
+.copyright{
+  margin-top: 1em;
   text-align: center;
 }
-/* footer end */
 
 /* carousel-card */
 .wrapper {
-  margin-top: 120px;
+  margin-top: 10%;
   overflow: hidden;
   /* background-color: rgb(84, 25, 192); */
   width: 100%;
@@ -238,16 +222,16 @@ footer {
   overflow: hidden;
   width: 100%;
   max-width: 100%;
-  height: 400px; 
+  height: 90%; 
 }
 
 .card {
-  width: 90px;
+  width: 10%;
   border-radius: 0.75rem;
   background-size: cover;
   overflow: hidden;
   border-radius: 2rem;
-  margin: 0 10px;
+  margin: 0 0.4em;
   display: flex;
   align-items: flex-end;
   transition: 0.6s cubic-bezier(0.2, -0.03, 0.99);
@@ -269,11 +253,12 @@ footer {
   background: #222;
   color: white;
   border-radius: 50%;
-  width: 50px;
+  width: 3em;
+  height: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin: 1em;
 }
 a{
   margin-top: 50%;
@@ -298,7 +283,7 @@ a:hover{
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-  height: 80px;
+  height: 40%;
   width: 200px; 
   opacity: 0;
   transform: translateY(30px);

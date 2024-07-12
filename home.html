@@ -5,38 +5,64 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HOME</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
         <!-- navbar container -->
         <div class="container-nav">
             <nav>
-                <div class="logo-container">
+                <ul class="nav-bar">
+                    <li class="logo"><a href="#"><img src="img\logo-menwa.png"
+                                alt="menu"></a></li>
+                    <input type="checkbox" id="check">
+                    <span class="menu">
+                        <div>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="kegiatan.html">Kegiatan</a></li>
+                        </div>
+                        <div>
+                            <li><a href="https://youtube.com/@menwaupnvyk9655?si=iQ4tGp_rJyWpeyNK">Youtube</a></li>
+                            <li><a href="https://www.instagram.com/menwaupnvy?igsh=M3A3MDY0ZG5ibWo1">Instagram</a></li>
+                            <li><a href="https://www.tiktok.com/@menwaupnvy?_t=8nebYRvYzSs&_r=1">Tiktok</a></li>
+                        </div>
+                        <label for="check" class="close-menu"><i
+                                class="fas fa-times"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i
+                            class="fas fa-bars"></i></label>
+                </ul>
+                <!-- <div class="logo-container">
                     <img src="img/logo-menwa.png" class="logo">
                     <h1 class="logo-t">RESIMEN <br> MAHASISWA <br> UPNVYK </h1>
                 </div>
-                <div class="ulc">        
-                     <ul class="ula">
-                        <li><a href="home.html" class="link">Home</a></li>
-                        <li><a href="about.html" class="link">About Us</a></li>
-                        <li><a href="kegiatan.html" class="link">Kegiatan</a></li>
-                    </ul>
-                   
-                    <ul class="ulb">
-                        <li><a href="https://youtube.com/@menwaupnvyk9655?si=iQ4tGp_rJyWpeyNK"><img class="link" src="img\yt-icon.png" alt="yt"></a></li>
-                        <li><img class="link-fb" src="img\fb-icon.png" alt="fb"></li>
-                        <li><a href="https://www.instagram.com/menwaupnvy?igsh=M3A3MDY0ZG5ibWo1"><img class="link-ig" src="img\ig-icon.png" alt="ig"></a></li>
-                        <li><a href="https://www.tiktok.com/@menwaupnvy?_t=8nebYRvYzSs&_r=1"><img class="link" src="img\tiktok-icon.png" alt="tk"></a></li>
-                    </ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    &#9776;
                 </div>
-               
+                <div class="ulc">
+                    <ul class="ula">
+                      <li><a href="home.html" class="link">Home</a></li>
+                      <li><a href="about.html" class="link">About Us</a></li>
+                      <li><a href="kegiatan.html" class="link">Kegiatan</a></li>
+                    </ul>
+                    <ul class="ulb">
+                      <li><a href="https://youtube.com/@menwaupnvyk9655?si=iQ4tGp_rJyWpeyNK"><img class="link" src="img/yt-icon.png" alt="yt"></a></li>
+                      <li><a href="#"><img class="link-fb" src="img/fb-icon.png" alt="fb"></a></li>
+                      <li><a href="https://www.instagram.com/menwaupnvy?igsh=M3A3MDY0ZG5ibWo1"><img class="link-ig" src="img/ig-icon.png" alt="ig"></a></li>
+                      <li><a href="https://www.tiktok.com/@menwaupnvy?_t=8nebYRvYzSs&_r=1"><img class="link" src="img/tiktok-icon.png" alt="tk"></a></li>
+                    </ul>
+                  </div> -->
             </nav>
             <!-- logo banner -->
             <section class="banner">
-                 <!-- Video background -->
-    <video class="video_bg" autoplay muted loop>
-        <source src="img/tes1.mp4" type="video/mp4">
-    </video>
+                <!-- Video background -->
+                <video class="video_bg" autoplay muted loop>
+                    <source src="img/tes1.mp4" type="video/mp4">
+                </video>
                 <!-- welcome text  -->
                 <div class="welcome">
                     <div class="text-container">
@@ -53,25 +79,25 @@
             <div class="carousel">
                 <div class="slides">
                     <div class="slide">
-                        <img src="img\1.jpeg" alt="Image 1">
+                        <img src="img/1.jpeg" alt="Image 1">
                     </div>
                     <div class="slide">
-                        <img src="img\2.jpeg" alt="Image 2">
+                        <img src="img/2.jpeg" alt="Image 2">
                     </div>
                     <div class="slide">
-                        <img src="img\3.jpg" alt="Image 3">
+                        <img src="img/3.jpg" alt="Image 3">
                     </div>
                     <div class="slide">
-                        <img src="img\4.JPG" alt="Image 4">
+                        <img src="img/4.JPG" alt="Image 4">
                     </div>
                     <div class="slide">
-                        <img src="img\5.jpeg" alt="Image 5">
+                        <img src="img/5.jpeg" alt="Image 5">
                     </div>
                     <div class="slide">
-                        <img src="img\6.jpeg" alt="Image 6">
+                        <img src="img/6.jpeg" alt="Image 6">
                     </div>
                     <div class="slide">
-                        <img src="img\7.jpg" alt="Image 7">
+                        <img src="img/7.jpg" alt="Image 7">
                     </div>
                 </div>
                 <div class="navigation">
@@ -89,31 +115,35 @@
                     <span class="indicator" onclick="currentSlide(6)"></span>
                     <span class="indicator" onclick="currentSlide(7)"></span>
                 </div>
-                </div>
             </div>
         </div>
-        <!--  -->
         <!-- content end -->
         <!-- footer -->
         <footer>
-            <!-- address,contact -->
-             <div  class="container-f">
+            <!-- address, contact -->
+            <div class="container-f">
                 <div class="location">
                     <h4 class="alamat">LOKASI KAMPUS PUSAT :<p>
-                        JL. SWK 104 (Lingkar Utara), Condongcatur, Depok, Sleman, Yogyakarta 55283</p></h4>
+                            JL. SWK 104 (Lingkar Utara), Condongcatur, Depok,
+                            Sleman, Yogyakarta 55283</p></h4>
                     <h4 class="alamat1">Alamat Markas Komando:
-                    <p>Jl. Padjajaran Jl. Ring Road Utara, Ngropoh, Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55283.</p></h4>
-                 </div>
-             <!-- address,contact end -->
-              <!-- contact -->
-                 <div class="contact">
-                    <h4 class="nomor">LOKASI KAMPUS PUSAT :<p>
-                        JL. SWK 104 (Lingkar Utara), Condongcatur, Depok, Sleman, Yogyakarta 55283</p></h4>
-                    <h4 class="nomor1">Alamat Markas Komando:
-                    <p>Jl. Padjajaran Jl. Ring Road Utara, Ngropoh, Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55283.</p></h4>
+                        <p>Jl. Padjajaran Jl. Ring Road Utara, Ngropoh,
+                            Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah
+                            Istimewa Yogyakarta 55283.</p></h4>
                 </div>
-              <!-- contact end -->
-             </div>            
+                <!-- address, contact end -->
+                <!-- contact -->
+                <div class="contact">
+                    <h4 class="nomor">LOKASI KAMPUS PUSAT :<p>
+                            JL. SWK 104 (Lingkar Utara), Condongcatur, Depok,
+                            Sleman, Yogyakarta 55283</p></h4>
+                    <h4 class="nomor1">Alamat Markas Komando:
+                        <p>Jl. Padjajaran Jl. Ring Road Utara, Ngropoh,
+                            Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah
+                            Istimewa Yogyakarta 55283.</p></h4>
+                </div>
+                <!-- contact end -->
+            </div>
             <div class="copyright">
                 <p>&copy; 2024 MENWA UPNVYK.</p>
             </div>

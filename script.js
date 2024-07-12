@@ -45,3 +45,10 @@ function resetInterval() {
 showSlide(currentIndex);
 autoPlay();
 // carousel end
+
+// hamburger menu 
+function toggleMenu() {
+  const ulc = document.querySelector('.ulc');
+  ulc.classList.toggle('active');
+}
+// hamburger menu
