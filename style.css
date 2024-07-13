@@ -9,6 +9,8 @@
 body {
   background-color: rgba(20, 73, 27, 0.4);
   min-height: 200vh;
+  --color1: rgb(255, 255, 255);
+  --color2: rgba(20, 73, 27, 0.8);
 }
 /* global end */
 /* navbar  */
@@ -120,49 +122,6 @@ nav.sticky {
 }
 #check {
   display: none;
-}
-@media (max-width: 610px) {
-  .menu {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 80%;
-      height: 100vh;
-      position: fixed;
-      top: 0;
-      right: -100%;
-      z-index: 100;
-      background-color: rgba(20, 73, 27, 0.8);
-      transition: all 0.2s ease-in-out;
-      -webkit-transition: all 0.2s ease-in-out;
-      -moz-transition: all 0.2s ease-in-out;
-      -ms-transition: all 0.2s ease-in-out;
-      -o-transition: all 0.2s ease-in-out;
-}
-  .logo img {
-    width: 100%; 
-  }
-  .menu div {
-      flex-basis: auto;
-      flex-grow: 1;
-      width: 100%;
-      flex-direction: column; 
-  }
-  .menu li {
-      padding: 1em; 
-  }
-  .menu img{
-    display: none;
-  }
-  .menu li .text-link{
-    display: inline-block;
-  }
-  .open-menu, .close-menu {
-      display: block;
-  }
-  #check:checked ~ .menu {
-      right: 0;
-  }
 }
 a:hover{
   transform: scale(1.1);
@@ -374,29 +333,71 @@ font-size: 1em;
 
 /* Menyesuaikan lebar gambar di carousel untuk layar kecil */
 @media only screen and (max-width: 660px) {
-  
-  /* Menyesuaikan logo untuk layar kecil */
-  nav .ula li a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 1px;
-    font-size: 1vmax;
-    transition: 0.6s;
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
   }
-
-.logo {
-    width: 40px; /* Menyesuaikan ukuran logo untuk tampilan mobile */
-}
-nav .logo-t {
+  main {
+    flex: 1; /* Memastikan bagian utama (content) mengambil ruang sisa */
+  }
+  nav {
+    padding: 10px 20px; /* Mengurangi padding pada navigasi untuk layar kecil */
+  }
+  .logo {
+    width: 30px; /* Menyesuaikan ukuran logo untuk tampilan mobile */
+  }
+  nav .logo-t {
   font-size: 1vmax;
-}
-nav.sticky {
-  
+  }
+  nav.sticky {
+  padding: 10px 40px;
   background: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
+  }
+  .menu {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 100;
+      background-color: rgba(20, 73, 27, 0.8);
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
 }
+  .logo img {
+    width: 100%; 
+  }
+  .menu div {
+      flex-basis: auto;
+      flex-grow: 1;
+      width: 100%;
+      flex-direction: column; 
+  }
+  .menu li {
+      padding: 1em; 
+  }
+  .menu img{
+    display: none;
+  }
+  .menu li .text-link{
+    display: inline-block;
+  }
+  .open-menu, .close-menu {
+      display: block;
+  }
+  #check:checked ~ .menu {
+      right: 0;
+  }
+
 .banner {
   background-color: rgba(20, 73, 27, 0.4);
   margin-top: 20%;
@@ -449,13 +450,12 @@ nav.sticky {
     margin-top: 5%;
   }
   footer {
-    display: relative;
-    margin-top: 6%;
-    padding: 10px;
+    margin-top: auto; /* Footer selalu di bawah konten utama */
+    width: 100%;
     background-color: #333;
     color: #fff;
-    bottom: 0;
-    width: 100%;
+    padding: 10px;
+    text-align: center;
   }
 }
 
