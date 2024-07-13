@@ -374,9 +374,7 @@ font-size: 1em;
 
 /* Menyesuaikan lebar gambar di carousel untuk layar kecil */
 @media only screen and (max-width: 660px) {
-  nav {
-    padding: 10px 20px; /* Mengurangi padding pada navigasi untuk layar kecil */
-  }
+  
   /* Menyesuaikan logo untuk layar kecil */
   nav .ula li a {
     margin: 0 15px;
@@ -386,17 +384,15 @@ font-size: 1em;
     font-size: 1vmax;
     transition: 0.6s;
   }
-.ulb {
-    margin-left: 10px; /* Menyesuaikan margin untuk tampilan ikon sosial */
-}
+
 .logo {
-    width: 30px; /* Menyesuaikan ukuran logo untuk tampilan mobile */
+    width: 40px; /* Menyesuaikan ukuran logo untuk tampilan mobile */
 }
 nav .logo-t {
   font-size: 1vmax;
 }
 nav.sticky {
-  padding: 10px 40px;
+  
   background: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
