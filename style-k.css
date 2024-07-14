@@ -8,7 +8,7 @@
 
 body {
   min-height: 200vh;
-  background: url("img/bgabout.jpg") no-repeat center center/cover;
+  /* background: url("img/bgabout.jpg") no-repeat center center/cover; */
   --color1: rgb(255, 255, 255);
   --color2: rgba(20, 73, 27, 0.8);
 }
@@ -180,14 +180,11 @@ a:hover{
 /* kegiatan container end */
 
 /* footer style  */
-/* footer style  */
 footer {
   display: relative;
-  margin-top: 1%;
   padding: 1em;
   background-color: #333;
   color: #fff;
-  bottom: 0;
   width: 100%;
   height: auto;
 }
@@ -225,13 +222,13 @@ font-size: 1em;
   text-align: center;
 }
 
-/* carousel-card */
+/* Carousel Card */
 .wrapper {
+  background-color: #ff0000;
   margin-top: 10%;
   overflow: hidden;
-  /* background-color: rgb(84, 25, 192); */
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -239,19 +236,21 @@ font-size: 1em;
 }
 
 .carousel-container {
+  background-color: aqua;
   display: flex;
   overflow: hidden;
   width: 100%;
-  height: 90%; 
+  max-width: 100%;
+  height: 400px; 
 }
 
 .card {
-  width: 20%;
+  width: 90px;
   border-radius: 0.75rem;
   background-size: cover;
   overflow: hidden;
   border-radius: 2rem;
-  margin: 0 0.4em;
+  margin: 0 10px;
   display: flex;
   align-items: flex-end;
   transition: 0.6s cubic-bezier(0.2, -0.03, 0.99);
@@ -273,22 +272,15 @@ font-size: 1em;
   background: #222;
   color: white;
   border-radius: 50%;
-  width: 3em;
-  height: 3em;
+  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1em;
-}
-.card a{
-  margin-top: 50%;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  /* background-color: aquamarine; */
+  margin: 15px;
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
 }
 
 .card > .row > .description {
@@ -296,7 +288,7 @@ font-size: 1em;
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-  height: 40%;
+  height: 80px;
   width: 200px; 
   opacity: 0;
   transform: translateY(30px);
@@ -330,7 +322,6 @@ input:checked + label .description {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.7);
   border: none;
   font-size: 2rem;
   cursor: pointer;
@@ -402,27 +393,23 @@ input:checked + label .description {
   main {
     flex: 1; /* Memastikan bagian utama (content) mengambil ruang sisa */
   }
-  nav {
-    padding: 10px 20px; /* Mengurangi padding pada navigasi untuk layar kecil */
-  }
   .logo {
-    width: 30px; /* Menyesuaikan ukuran logo untuk tampilan mobile */
+    width: 20%; /* Menyesuaikan ukuran logo untuk tampilan mobile */
   }
   nav .logo-t {
   font-size: 1vmax;
   }
   nav.sticky {
-  padding: 10px 40px;
   background: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
 .wrapper {
-  margin-top: 120px;
+  margin-top: 50%;
   overflow: hidden;
   /* background-color: rgb(84, 25, 192); */
-  width: 100%;
-  height:50vh;
+  width: 1200px;
+  height:25vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -431,12 +418,12 @@ input:checked + label .description {
 .carousel-container {
   display: flex;
   overflow: hidden;
-  width: 100%;
-  max-width: 100%;
+  width: 12000px;
+  max-width: 2000px;
   height: 100%; 
 }
 .card {
-  width: 90px;
+  width: 120px;
   border-radius: 0.75rem;
   background-size: cover;
   overflow: hidden;
@@ -451,6 +438,79 @@ input:checked + label .description {
   -moz-transition: background-image 0.5s ease;
   -ms-transition: background-image 0.5s ease;
   -o-transition: background-image 0.5s ease;
+}
+.card > .row {
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+  background: #222;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.card > .row > .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 200px; 
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: 0.3s;
+  transition: all 0.5s ease;
+}
+
+.description p {
+  color: #000000;
+  padding-top: 5px;
+}
+
+.description h4 {
+  text-transform: uppercase;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 100%;
+}
+
+input:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 30px;
+}
+
+.right-arrow {
+  right: 30px;
 }
 
   .location,
