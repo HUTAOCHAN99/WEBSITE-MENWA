@@ -1,134 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HOME</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script type="text/javascript" src="script.js"></script>
-    </head>
-    <body>
-        <!-- navbar container -->
-        <div class="container-nav">
-            <nav>
-                <ul class="nav-bar">
-                    <li class="logo"><img src="img\logo-menwa.png"
-                                alt="menu"></a></li>
-                    <input type="checkbox" id="check">
-                    <span class="menu">
-                        <div>
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="kegiatan.html">Kegiatan</a></li>
-                        </div>
-                        <div>
-                            <li><a href="https://youtube.com/@menwaupnvyk9655?si=iQ4tGp_rJyWpeyNK"><span class="text-link">Youtube</span><img src="img\yt-icon.png" alt="yt" class="yt"></a></li>
-                            <li><a href="#"><span class="text-link">Facebook</span><img src="img\fb-icon.png" alt="fb" class="sosmed"></a></li>
-                            <li><a href="https://www.instagram.com/menwaupnvy?igsh=M3A3MDY0ZG5ibWo1"><span class="text-link">Instagram</span><img src="img\ig-icon.png" alt="ig" class="sosmed"></a></li>
-                            <li><a href="https://www.tiktok.com/@menwaupnvy?_t=8nebYRvYzSs&_r=1"><span class="text-link">Tiktok</span><img src="img\tiktok-icon.png" alt="tiktok" class="sosmed"></a></li>
-                        </div>
-                        <label for="check" class="close-menu"><i
-                                class="fas fa-times"></i></label>
-                    </span>
-                    <label for="check" class="open-menu"><i
-                            class="fas fa-bars"></i></label>
-                </ul>
-            </nav>
-            <!-- logo banner -->
-            <section class="banner">
-                <!-- Video background -->
-                <video class="video_bg" autoplay muted loop>
-                    <source src="img/tes1.mp4" type="video/mp4">
-                </video>
-                <!-- welcome text  -->
-                <div class="welcome">
-                    <div class="text-container">
-                        <div class="typing">
-                            Selamat datang di website Menwa Kalimasada
-                        </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <!-- Booststrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <!-- navbar container -->
+    <div class="container-nav">
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><img src="img\logo-menwa.png" alt="menu"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <div>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="kegiatan.html">Kegiatan</a></li>
+                    </div>
+                    <div>
+                        <li><a href="https://youtube.com/@menwaupnvyk9655?si=iQ4tGp_rJyWpeyNK"><span
+                                    class="text-link">Youtube</span><img src="img\yt-icon.png" alt="yt" class="yt"></a>
+                        </li>
+                        <li><a href="#"><span class="text-link">Facebook</span><img src="img\fb-icon.png" alt="fb"
+                                    class="sosmed"></a></li>
+                        <li><a href="https://www.instagram.com/menwaupnvy?igsh=M3A3MDY0ZG5ibWo1"><span
+                                    class="text-link">Instagram</span><img src="img\ig-icon.png" alt="ig"
+                                    class="sosmed"></a></li>
+                        <li><a href="https://www.tiktok.com/@menwaupnvy?_t=8nebYRvYzSs&_r=1"><span
+                                    class="text-link">Tiktok</span><img src="img\tiktok-icon.png" alt="tiktok"
+                                    class="sosmed"></a></li>
+                    </div>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+        <!-- logo banner -->
+        <section class="banner">
+            <!-- Video background -->
+            <video class="video_bg" autoplay muted loop>
+                <source src="img/tes1.mp4" type="video/mp4">
+            </video>
+            <!-- welcome text  -->
+            <div class="welcome">
+                <div class="text-container">
+                    <div class="typing">
+                        Selamat datang di website Menwa Kalimasada
                     </div>
                 </div>
-            </section>
-        </div>
-        <!-- navbar end -->
-        <!-- isi content -->
-        <div class="content-container">
-            <div class="carousel">
-                <div class="slides">
-                    <div class="slide">
-                        <img src="img/1.jpeg" alt="Image 1">
-                    </div>
-                    <div class="slide">
-                        <img src="img/2.jpeg" alt="Image 2">
-                    </div>
-                    <div class="slide">
-                        <img src="img/3.jpg" alt="Image 3">
-                    </div>
-                    <div class="slide">
-                        <img src="img/4.JPG" alt="Image 4">
-                    </div>
-                    <div class="slide">
-                        <img src="img/5.jpeg" alt="Image 5">
-                    </div>
-                    <div class="slide">
-                        <img src="img/6.jpeg" alt="Image 6">
-                    </div>
-                    <div class="slide">
-                        <img src="img/7.jpg" alt="Image 7">
-                    </div>
+            </div>
+        </section>
+    </div>
+    <!-- navbar end -->
+    <!-- isi content -->
+    <div class="content-container">
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide">
+                    <img src="img/1.jpeg" alt="Image 1">
                 </div>
-                <div class="navigation">
-                    <button class="prev"
-                        onclick="moveSlide(-1)">&#10094;</button>
-                    <button class="next"
-                        onclick="moveSlide(1)">&#10095;</button>
+                <div class="slide">
+                    <img src="img/2.jpeg" alt="Image 2">
                 </div>
-                <div class="indicators">
-                    <span class="indicator" onclick="currentSlide(1)"></span>
-                    <span class="indicator" onclick="currentSlide(2)"></span>
-                    <span class="indicator" onclick="currentSlide(3)"></span>
-                    <span class="indicator" onclick="currentSlide(4)"></span>
-                    <span class="indicator" onclick="currentSlide(5)"></span>
-                    <span class="indicator" onclick="currentSlide(6)"></span>
-                    <span class="indicator" onclick="currentSlide(7)"></span>
+                <div class="slide">
+                    <img src="img/3.jpg" alt="Image 3">
                 </div>
+                <div class="slide">
+                    <img src="img/4.JPG" alt="Image 4">
+                </div>
+                <div class="slide">
+                    <img src="img/5.jpeg" alt="Image 5">
+                </div>
+                <div class="slide">
+                    <img src="img/6.jpeg" alt="Image 6">
+                </div>
+                <div class="slide">
+                    <img src="img/7.jpg" alt="Image 7">
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div class="indicators">
+                <span class="indicator" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+                <span class="indicator" onclick="currentSlide(4)"></span>
+                <span class="indicator" onclick="currentSlide(5)"></span>
+                <span class="indicator" onclick="currentSlide(6)"></span>
+                <span class="indicator" onclick="currentSlide(7)"></span>
             </div>
         </div>
-        <!-- content end -->
-        <!-- footer -->
-        <footer>
-            <!-- address, contact -->
-            <div class="container-f">
-                <div class="location">
-                    <h4 class="alamat">LOKASI KAMPUS PUSAT :<p>
-                            JL. SWK 104 (Lingkar Utara), Condongcatur, Depok,
-                            Sleman, Yogyakarta 55283</p></h4>
-                    <h4 class="alamat1">Alamat Markas Komando:
-                        <p>Jl. Padjajaran Jl. Ring Road Utara, Ngropoh,
-                            Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah
-                            Istimewa Yogyakarta 55283.</p></h4>
+    </div>
+    <!-- content end -->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary">
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <!-- <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                Content
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    <i class="fas fa-gem me-3"></i>Company name
+                                </h6>
+                                <p>
+                                    Here you can use rows and columns to organize your footer content. Lorem ipsum
+                                    dolor sit amet, consectetur adipisicing elit.
+                                </p>
+                            </div> -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#home" class="text-reset">Home</a>
+                        </p>
+                        <p>
+                            <a href="aboutus.html" class="text-reset">About Us</a>
+                        </p>
+                        <p>
+                            <a href="#kegiatan" class="text-reset">Kegiatan</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Address</h6>
+                        <p><i class="fas fa-home me-3"></i>Lokasi Kampus Pusat :
+                            Jl. SWK 104 (Lingkar Utara), Condongcatur, Depok, Sleman, Yogyakarta 55283.</p>
+                        <p><i class="fas fa-home me-3"></i>Alamat Markas Komando :
+                            Jl. Padjajaran, Jl. Ring Road Utara, Ngropoh, Condongcatur, Kec. Depok, Kabupaten Sleman,
+                            Daerah Istimewa Yogyakarta
+                            55283.</p>
+                    </div>
                 </div>
-                <!-- address, contact end -->
-                <!-- contact -->
-                <div class="contact">
-                    <h4 class="nomor">LOKASI KAMPUS PUSAT :<p>
-                            JL. SWK 104 (Lingkar Utara), Condongcatur, Depok,
-                            Sleman, Yogyakarta 55283</p></h4>
-                    <h4 class="nomor1">Alamat Markas Komando:
-                        <p>Jl. Padjajaran Jl. Ring Road Utara, Ngropoh,
-                            Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah
-                            Istimewa Yogyakarta 55283.</p></h4>
-                </div>
-                <!-- contact end -->
+                <!-- Grid row -->
             </div>
-            <div class="copyright">
-                <p>&copy; 2024 MENWA UPNVYK.</p>
-            </div>
-        </footer>
-        <!-- footer end -->
-    </body>
+        </section>
+        <section class="justify-content-center">
+            <ul class="social-icon">
+                <li><a href="https://www.youtube.com/@menwaupnvyk9655?si=iQ4tGp_rJyWpeyNK" target="_blank"><ion-icon
+                            name="logo-youtube" role="img" class="md hydrated" aria-label="logo youtube"></ion-icon></a>
+                </li>
+                <li><a href="#" target="_blank"><ion-icon name="logo-facebook" role="img" class="md hydrated"
+                            aria-label="logo facebook"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/menwaupnvy" target="_blank"><ion-icon name="logo-instagram"
+                            role="img" class="md hydrated" aria-label="logo instagram"></ion-icon></a></li>
+                <li><a href="https://www.tiktok.com/@menwaupnvy?_t=8nebYRvYzSs&_r=1"><ion-icon name="logo-tiktok"
+                            role="img" class="md hydrated" aria-label="logo tiktok"></ion-icon></a></li>
+            </ul>
+        </section>
+
+        <div class="text-center p-4">
+            © 2024 MENWA UPNVYK
+        </div>
+    </footer>
+    <!-- Footer -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
