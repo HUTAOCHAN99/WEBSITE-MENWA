@@ -38,7 +38,7 @@ nav.sticky {
   padding: 0;
   background: #fff;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.1);
-  li a{
+  li a {
     color: black;
   }
 }
@@ -51,20 +51,20 @@ nav.sticky {
   padding: 1em;
 }
 .logo img {
-  width: 25%;  
+  width: 25%;
 }
 .menu {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 .menu div {
-  flex: 1 0 50%; 
+  flex: 1 0 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .menu li {
-  padding: 0.5em; 
+  padding: 0.5em;
 }
 .menu li .text-link {
   display: none;
@@ -78,11 +78,11 @@ nav.sticky {
   position: relative;
   text-transform: uppercase;
 
-  .sosmed{
+  .sosmed {
     width: 3em;
     height: auto;
   }
-  .yt{
+  .yt {
     width: 4em;
     height: auto;
   }
@@ -112,41 +112,41 @@ nav.sticky {
 
 .open-menu {
   top: 50%;
-  right: 2em; 
+  right: 2em;
   transform: translateY(-50%);
 }
 .close-menu {
-  top: 1em; 
-  right: 2em; 
+  top: 1em;
+  right: 2em;
 }
 #check {
   display: none;
 }
 @media (max-width: 610px) {
   .menu {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 80%;
-      height: 100vh;
-      position: fixed;
-      top: 0;
-      right: -100%;
-      z-index: 100;
-      background-color: rgba(20, 73, 27, 0.8);
-      transition: all 0.2s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: rgba(20, 73, 27, 0.8);
+    transition: all 0.2s ease-in-out;
   }
   .logo img {
-    width: 100%; 
+    width: 100%;
   }
   .menu div {
-      flex-basis: auto;
-      flex-grow: 1;
-      width: 100%;
-      flex-direction: column; 
+    flex-basis: auto;
+    flex-grow: 1;
+    width: 100%;
+    flex-direction: column;
   }
   .menu li {
-      padding: 1em; 
+    padding: 1em;
   }
   .menu li .text-link {
     display: inline-block;
@@ -154,14 +154,15 @@ nav.sticky {
   .menu li img {
     display: none;
   }
-  .open-menu, .close-menu {
-      display: block;
+  .open-menu,
+  .close-menu {
+    display: block;
   }
   #check:checked ~ .menu {
-      right: 0;
+    right: 0;
   }
 }
-a:hover{
+a:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -173,8 +174,8 @@ a:hover{
 /* navbar bawah end */
 
 /* kegiatan container  */
-header{
-  width: 100%; 
+header {
+  width: 100%;
   max-width: 100%;
   padding-left: 100px;
   display: flex;
@@ -182,7 +183,7 @@ header{
   position: relative;
   z-index: 1000;
 }
-header .count a{
+header .count a {
   color: #fff;
   margin-right: 5px;
   padding: 5px 10px;
@@ -190,32 +191,30 @@ header .count a{
   transition: 0.2s;
   text-decoration: none;
 }
-a{
+a {
   width: 100%;
   text-decoration: none;
   color: black;
 }
-a.active{
+a.active {
   background: #14ff72cb;
   border-radius: 2px;
 }
 
-a:hover{
+a:hover {
   background: #14ff72cb;
   border-radius: 2px;
 }
 
 /* Header section */
 
-
-
 /* carousel */
-.con{
+.con {
   background-color: aqua;
   width: 100%;
   height: auto;
 }
-.carousel{
+.carousel {
   width: 100%;
   height: 100vh;
   margin-top: 10%;
@@ -223,7 +222,7 @@ a:hover{
   position: relative;
 }
 
-.carousel .list .item{
+.carousel .list .item {
   width: 180px;
   height: 250px;
   position: absolute;
@@ -239,7 +238,7 @@ a:hover{
 }
 
 .carousel .list .item:nth-child(1),
-.carousel .list .item:nth-child(2){
+.carousel .list .item:nth-child(2) {
   top: 0;
   left: 0;
   transform: translate(0, 0);
@@ -248,32 +247,28 @@ a:hover{
   height: 100%;
 }
 
-.carousel .list .item:nth-child(3){
+.carousel .list .item:nth-child(3) {
   left: 67%;
 }
 
-.carousel .list .item:nth-child(4){
+.carousel .list .item:nth-child(4) {
   left: calc(67% + 200px);
 }
 
-.carousel .list .item:nth-child(5){
+.carousel .list .item:nth-child(5) {
   left: calc(67% + 400px);
 }
 
-.carousel .list .item:nth-child(6){
+.carousel .list .item:nth-child(6) {
   left: calc(67% + 600px);
 }
 
-.carousel .list .item:nth-child(n+7){
+.carousel .list .item:nth-child(n + 7) {
   left: calc(67% + 800px);
   opacity: 0;
 }
 
-
-
-
-
-.list .item .content{
+.list .item .content {
   position: absolute;
   top: 50%;
   left: 100px;
@@ -284,11 +279,11 @@ a:hover{
   display: none;
 }
 
-.list .item:nth-child(2) .content{
+.list .item:nth-child(2) .content {
   display: block;
 }
 
-.content .title{
+.content .title {
   font-size: 100px;
   text-transform: uppercase;
   color: #14ff72cb;
@@ -299,7 +294,7 @@ a:hover{
   animation: animate 1s ease-in-out 0.3s 1 forwards;
 }
 
-.content .name{
+.content .name {
   font-size: 100px;
   text-transform: uppercase;
   font-weight: bold;
@@ -310,7 +305,7 @@ a:hover{
   animation: animate 1s ease-in-out 0.6s 1 forwards;
 }
 
-.content .des{
+.content .des {
   margin-top: 10px;
   margin-bottom: 20px;
   font-size: 18px;
@@ -320,14 +315,14 @@ a:hover{
   animation: animate 1s ease-in-out 0.9s 1 forwards;
 }
 
-.content .btn{
+.content .btn {
   margin-left: 5px;
 
   opacity: 0;
   animation: animate 1s ease-in-out 1.2s 1 forwards;
 }
 
-.content .btn button{
+.content .btn button {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -335,49 +330,42 @@ a:hover{
   border: 2px solid #fff;
 }
 
-.content .btn button:nth-child(1){
+.content .btn button:nth-child(1) {
   margin-right: 15px;
 }
 
-.content .btn button:nth-child(2){
+.content .btn button:nth-child(2) {
   background: transparent;
   color: #14ff72cb;
   border: 2px solid #fff;
   transition: 0.3s;
 }
 
-.content .btn button:nth-child(2):hover{
+.content .btn button:nth-child(2):hover {
   background-color: #14ff72cb;
   color: #fff;
   border-color: #14ff72cb;
 }
 
-
 @keyframes animate {
-  
-  from{
-      opacity: 0;
-      transform: translate(0, 100px);
-      filter: blur(33px);
+  from {
+    opacity: 0;
+    transform: translate(0, 100px);
+    filter: blur(33px);
   }
 
-  to{
-      opacity: 1;
-      transform: translate(0);
-      filter: blur(0);
+  to {
+    opacity: 1;
+    transform: translate(0);
+    filter: blur(0);
   }
 }
 
 /* Carousel */
 
-
-
-
-
-
 /* next prev arrows */
 
-.arrows{
+.arrows {
   position: absolute;
   top: 80%;
   right: 52%;
@@ -389,7 +377,7 @@ a:hover{
   align-items: center;
 }
 
-.arrows button{
+.arrows button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -400,18 +388,17 @@ a:hover{
   font-size: 16px;
   font-family: monospace;
   font-weight: bold;
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
 }
 
-.arrows button:hover{
+.arrows button:hover {
   background: #fff;
   color: #000;
 }
 
-
 /* time running */
-.carousel .timeRunning{
+.carousel .timeRunning {
   position: fixed;
   z-index: 1000;
   width: 0%;
@@ -423,70 +410,138 @@ a:hover{
 }
 
 @keyframes runningTime {
-  
-  from{width: 0%;}
-  to{width: 100%;}
-
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
-
 
 /* Responsive Design */
 
-@media screen and (max-width: 999px){
-  
-  header{
-      padding-left: 50px;
+@media screen and (max-width: 999px) {
+  header {
+    padding-left: 50px;
   }
 
-  .list .item .content{
-      left: 50px;
+  .list .item .content {
+    left: 50px;
   }
 
-  .content .title, .content .name{
-      font-size: 70px;
+  .content .title,
+  .content .name {
+    font-size: 70px;
   }
 
-  .content .des{
-      font-size: 16px;
+  .content .des {
+    font-size: 16px;
   }
-
 }
 
-@media screen and (max-width: 690px){
-  header nav a{
-      font-size: 14px;
-      margin-right: 0;
+@media screen and (max-width: 690px) {
+  header nav a {
+    font-size: 14px;
+    margin-right: 0;
   }
 
-  .list .item .content{
-      top: 40%;
+  .list .item .content {
+    top: 40%;
   }
 
-  .content .title, .content .name{
-      font-size: 45px;
+  .content .title,
+  .content .name {
+    font-size: 45px;
   }
 
-  .content .btn button{
-      padding: 10px 15px;
-      font-size: 14px;
+  .content .btn button {
+    padding: 10px 15px;
+    font-size: 14px;
   }
 }
 /* kegiatan container end */
 
 /* footer style  */
-footer {
+/* footer {
   display: relative;
   padding: 1em;
   background-color: #333;
   color: #fff;
   width: 100%;
   height: auto;
-}
-.container-f{
-  display: flex;
+} */
 
+footer {
+  color: white !important;
+  background-color: whitesmoke;
+  padding-top: 10px;
+  border: 0;
+  background-image: url(img/footer.webp);
+  object-fit: cover;
 }
-.location{
+
+#footer-wave .elementor-shape-fill {
+  fill: #091d3f;
+}
+
+#footer-wave {
+  transform: rotateX(180deg);
+  margin-bottom: -5px;
+}
+
+footer .social-icon,
+footer .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .social-icon li,
+footer .menu li {
+  list-style: none;
+}
+
+footer .menu,
+footer .social-icon {
+  width: 400px;
+  position: relative;
+}
+
+footer .social-icon li a,
+footer .menu li a {
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social-icon li a:hover {
+  transform: translateY(-10px);
+}
+
+footer .menu li a {
+  font-size: 1em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+footer .menu li a:hover {
+  opacity: 1;
+}
+
+footer ion-icon {
+  font-size: 2em;
+}
+
+.container-f {
+  display: flex;
+}
+.location {
   margin-left: 10%;
   background: #7a5656;
   width: 40%;
@@ -494,24 +549,24 @@ footer {
   padding-right: 2em;
   padding-left: 1em;
 }
-.alamat{
+.alamat {
   border-bottom: 0.15em solid green;
   padding-bottom: 1em;
-font-size: 1em;
+  font-size: 1em;
 }
-.contact{
+.contact {
   background: #ff0000;
   width: 40%;
   height: auto;
   padding-right: 20px;
   padding-left: 10px;
 }
-.nomor{
+.nomor {
   border-bottom: 0.15em solid green;
   padding-bottom: 1em;
   font-size: 1em;
 }
-.copyright{
+.copyright {
   margin-top: 1em;
   text-align: center;
 }
@@ -522,7 +577,7 @@ font-size: 1em;
     min-height: 100vh; /* Menjamin kontainer utama mencakup setidaknya seluruh tinggi layar */
     margin: 0;
   }
-  
+
   main {
     flex: 1; /* Memastikan bagian utama (content) mengambil ruang sisa */
   }
@@ -530,11 +585,11 @@ font-size: 1em;
     width: 20%; /* Menyesuaikan ukuran logo untuk tampilan mobile */
   }
   nav .logo-t {
-  font-size: 1vmax;
+    font-size: 1vmax;
   }
   nav.sticky {
-  background: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .location,
@@ -542,15 +597,16 @@ font-size: 1em;
     width: 100%; /* Mengisi lebar layar penuh untuk lokasi dan kontak */
     margin-left: 0; /* Menghilangkan margin kiri pada elemen */
   }
-  .alamat,.nomor {
+  .alamat,
+  .nomor {
     width: 100%; /* Mengisi lebar layar penuh untuk lokasi dan kontak */
     height: 40%;
     margin-left: 0; /* Menghilangkan margin kiri pada elemen */
     margin-top: 5%;
     font-size: 1vh;
-    
   }
-  .alamat1,.nomor1 {
+  .alamat1,
+  .nomor1 {
     width: 100%; /* Mengisi lebar layar penuh untuk lokasi dan kontak */
     height: 50%;
     margin-left: 0; /* Menghilangkan margin kiri pada elemen */
@@ -568,11 +624,8 @@ font-size: 1em;
 }
 
 /* Menyembunyikan .ula dan menyesuaikan .ulb di layar kecil */
-@media only screen and (min-width: 600px) and (max-width: 900px){
-  
-
+@media only screen and (min-width: 600px) and (max-width: 900px) {
 }
 /* Menyesuaikan ukuran video background di layar kecil */
 @media only screen and (max-width: 900px) {
-
 }
