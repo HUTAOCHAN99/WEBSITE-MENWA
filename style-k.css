@@ -201,7 +201,6 @@ a.active{
 }
 
 a:hover{
-  background: #14ff72cb;
   border-radius: 2px;
 }
 
@@ -269,10 +268,13 @@ a:hover{
   opacity: 0;
 }
 
-
-
-
-
+button:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
 .list .item .content{
   position: absolute;
   top: 50%;
@@ -563,7 +565,6 @@ font-size: 1em;
     background-color: #333;
     color: #fff;
     padding: 10px;
-    text-align: center;
   }
 }
 
