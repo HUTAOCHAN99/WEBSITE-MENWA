@@ -7,10 +7,19 @@
 }
 
 body {
-  min-height: 200vh;
-  /* background: url("img/bgabout.jpg") no-repeat center center/cover; */
+
+  display: flex;
+  flex-direction: column;
+  min-height: 150vh; /* Ensures the body covers at least the full height of the screen */
+  background: url("img/bgabout.jpg") no-repeat center center/cover;
+
   --color1: rgb(255, 255, 255);
   --color2: rgba(20, 73, 27, 0.8);
+}
+
+/* Main content area that will grow to fill the space between the header and footer */
+main {
+  flex: 1; /* Ensures the main content area takes up the remaining space */
 }
 /* global end */
 /* navbar  */
@@ -201,14 +210,17 @@ a.active {
   border-radius: 2px;
 }
 
+
 a:hover {
   background: #14ff72cb;
+
   border-radius: 2px;
 }
 
 /* Header section */
 
 /* carousel */
+
 .con {
   background-color: aqua;
   width: 100%;
@@ -269,6 +281,7 @@ a:hover {
 }
 
 .list .item .content {
+
   position: absolute;
   top: 50%;
   left: 100px;
@@ -347,6 +360,7 @@ a:hover {
   border-color: #14ff72cb;
 }
 
+
 @keyframes animate {
   from {
     opacity: 0;
@@ -419,6 +433,22 @@ a:hover {
 }
 
 /* Responsive Design */
+@media screen and (max-width: 690px) {
+  .carousel .list .item {
+    width: 120px;
+    height: 160px;
+    top: 65%;
+    transform: translateY(-50%);
+  }
+  .carousel .list .item:nth-child(1),
+  .carousel .list .item:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
 
 @media screen and (max-width: 999px) {
   header {
@@ -437,7 +467,13 @@ a:hover {
   .content .des {
     font-size: 16px;
   }
+
 }
+@media screen and (max-width: 999px) {
+  .list .item .content {
+    left: 20px;
+  }
+
 
 @media screen and (max-width: 690px) {
   header nav a {
@@ -447,11 +483,37 @@ a:hover {
 
   .list .item .content {
     top: 40%;
+
   }
+  .title,.name,.des{
+    margin-right: 15%;
+    color: rgb(255, 255, 255); 
+    border-right: 0.01rem solid rgb(0, 0, 0); 
+    /* Outline putih */
+    text-shadow:
+      -1px -1px 0 #000000,  
+      1px -1px 0 #000000,
+      -1px 1px 0 #000000,
+      1px 1px 0 #000000;
+  }
+}
 
   .content .title,
   .content .name {
     font-size: 45px;
+
+  }
+  
+  .content .title, .content .name {
+    font-size: 25px;
+  color: rgb(8, 66, 8); 
+  border-right: 0.01rem solid rgb(0, 0, 0); 
+  /* Outline putih */
+  text-shadow:
+    -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
   }
 
   .content .btn button {
@@ -459,14 +521,85 @@ a:hover {
     font-size: 14px;
   }
 }
+
+@media screen and (min-width: 900px) {
+
+  .content .title, .content .name {
+  color: rgb(8, 66, 8); 
+  border-right: 0.01rem solid rgb(0, 0, 0); 
+  /* Outline putih */
+  text-shadow:
+    -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+
+
+  .content .btn button {
+    padding: 10px 15px;
+    font-size: 14px;
+
+  }
+
+}
+@media screen and (max-width: 610px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: rgba(20, 73, 27, 0.8);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  .menu div {
+    flex-basis: auto;
+    flex-grow: 1;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .menu li {
+    padding: 1em;
+  }
+
+  .menu li .text-link {
+    display: inline-block;
+  }
+
+  .menu li img {
+    display: none;
+  }
+
+
+  .open-menu, .close-menu {
+    display: block;
+  }
+
+  #check:checked ~ .menu {
+    right: 0;
+  }
+}
+
 /* kegiatan container end */
 
 /* footer style  */
 /* footer {
   display: relative;
+  margin-top: auto;
   padding: 1em;
   background-color: #333;
   color: #fff;
+  bottom: 0;
   width: 100%;
   height: auto;
 } */
@@ -538,8 +671,10 @@ footer ion-icon {
   font-size: 2em;
 }
 
+
 .container-f {
   display: flex;
+
 }
 .location {
   margin-left: 10%;
@@ -619,7 +754,6 @@ footer ion-icon {
     background-color: #333;
     color: #fff;
     padding: 10px;
-    text-align: center;
   }
 }
 

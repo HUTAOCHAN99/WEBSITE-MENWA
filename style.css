@@ -8,6 +8,7 @@
 
 body {
   background-color: rgba(20, 73, 27, 0.4);
+  background: url("img/bgabout.jpg") no-repeat center center/cover;
   min-height: 200vh;
   --color1: rgb(255, 255, 255);
   --color2: rgba(20, 73, 27, 0.8);
@@ -416,7 +417,7 @@ font-size: 1em;
     padding: 10px 20px; /* Mengurangi padding pada navigasi untuk layar kecil */
   }
   .logo {
-    width: 30px; /* Menyesuaikan ukuran logo untuk tampilan mobile */
+    width: 20%; /* Menyesuaikan ukuran logo untuk tampilan mobile */
   }
   nav .logo-t {
   font-size: 1vmax;
@@ -525,7 +526,6 @@ font-size: 1em;
     background-color: #333;
     color: #fff;
     padding: 10px;
-    text-align: center;
   }
 }
 
