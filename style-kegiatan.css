@@ -8,7 +8,9 @@
 
 body {
   background-color: rgba(22, 120, 14, 0.8);
-  width: 100%;
+
+  min-height: 200vh;
+
 }
 /* global end */
 /* navbar  */
